@@ -1,0 +1,15 @@
+.DS_Store
+node_modules/
+.vagrant/
+dist/
+npm-debug.log
+.idea
+vendor
+
+## build folder
+src/.build/*
+!src/.build/.gitkeep
+
+## storage
+storage/*
+!storage/.gitkeep

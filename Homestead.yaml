@@ -1,0 +1,36 @@
+---
+ip: "10.10.10.14"
+memory: 2048
+cpus: 1
+hostname: telus-core.dev.matijaboban.com
+name: telus-core
+provider: virtualbox
+
+authorize: ~/.ssh/id_rsa.pub
+
+keys:
+    - ~/.ssh/id_rsa
+
+folders:
+    - map: "~/Sites/telus-core"
+      to: "/home/vagrant/telus-core"
+
+sites:
+    - map: telus-core.dev.matijaboban.com
+      to: "/home/vagrant/telus-core/public"
+
+databases:
+    - telus-core-dev
+
+# blackfire:
+#     - id: foo
+#       token: bar
+#       client-id: foo
+#       client-token: bar
+
+# ports:
+#     - send: 50000
+#       to: 5000
+#     - send: 7777
+#       to: 777
+#       protocol: udp

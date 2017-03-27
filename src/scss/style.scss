@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+// import normalize
+@import "../../node_modules/normalize-scss/sass/normalize/import-now";
+
+// import materialize
+@import "../../node_modules/materialize-css/sass/materialize";
+
+// Custom style
+@import "custom";
